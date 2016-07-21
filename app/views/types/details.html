@@ -2,8 +2,8 @@
   <div id="type-details-header">
     <p>FIX ME!!</p>
   </div>
-  <datepicker ng-model="typeDetailsCtrl.date" min-mode="month" datepicker-mode="'month'"
-              ng-change="typeDetailsCtrl.update(typeDetailsCtrl.date)"/>
+  <div uib-datepicker ng-model="typeDetailsCtrl.date" datepicker-options="{datepickerMode: 'month', minMode: 'month'}"
+              ng-change="typeDetailsCtrl.update(typeDetailsCtrl.date)"></div>
   <div id="type-details-intervals">
     <ul class="list-group">
       <li ng-repeat="d in typeDetailsCtrl.details" class="list-group-item">
