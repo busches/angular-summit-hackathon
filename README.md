@@ -20,11 +20,11 @@ Open 2 terminals and `cd` into the directory where you cloned this repo
 
 ## Issues to fix
 
-- Header currently says "FIX ME!!" instead of displaying the Current Type
-- The `TypeDetailsCtrl` `update` function should return the details for the selected month
-- In the details listing:
--- From and To show as unix timestamps, they should instead appear in this format: `(2017) July 01 01:01 am`
--- Duration shows as a unix timestamp, it should instead appear in this format: `08:01` (Hours:Minutes)
+1. Header currently says "FIX ME!!" instead of displaying the Current Type
+2. The `TypeDetailsCtrl` `update` function should return the details for the selected month
+3. In the details listing:
+  - From and To show as unix timestamps, they should instead appear in this format: `(2017) July 01 01:01 am`
+  - Duration shows as a unix timestamp, it should instead appear in this format: `08:01` (Hours:Minutes)
 
 Note: The `Work` category has no items in it.
 
