@@ -26,6 +26,8 @@ Open 2 terminals and `cd` into the directory where you cloned this repo
 -- From and To show as unix timestamps, they should instead appear in this format: `(2017) July 01 01:01 am`
 -- Duration shows as a unix timestamp, it should instead appear in this format: `08:01` (Hours:Minutes)
 
+Note: The `Work` category has no items in it.
+
 ## License
 
 Copyright (c) 2015 Venkat Subramaniam & Raju Gandhi
