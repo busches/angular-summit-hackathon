@@ -16,8 +16,8 @@ angular.module('hackathonApp')
           "id": "00102dcc-d571-4d9a-868a-8a7c8f42a4a0",
           "typeId": "5",
           "comment": "",
-          "from": 1421516014,
-          "to": 1421518314,
+          "from": 1453201500,
+          "to": 1453203800,
           "activityId": "5",
           "revision": null,
           "type": null
