@@ -14,7 +14,7 @@ Open 2 terminals and `cd` into the directory where you cloned this repo
 
 - In the first one run `node server.js` - This will start a express based REST-ful end-point for the backend.
 - In the second one run `grunt serve` - This will open the application in your browser to [http://localhost:9000/](http://localhost:9000/)
--- If you don't have grunt install globally you can instead run `./node_modules/.bin/grunt serve`
+-- If you don't have grunt install globally you can instead run `node_modules\.bin\grunt serve`
 
 **NOTE** This repo will see massive, and often destructive changes over time. Preferably fork this repo vs. cloning. 
 
