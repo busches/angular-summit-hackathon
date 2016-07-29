@@ -12,38 +12,20 @@ angular.module('hackathonApp')
     'TypesFactory', '$routeSegment',
     function(typesFactory, $routeSegment) {
       var vm = this;
-      vm.details = [{
-          "id": "00102dcc-d571-4d9a-868a-8a7c8f42a4a0",
-          "typeId": "5",
-          "comment": "",
-          "from": 1453201500,
-          "to": 1453203800,
-          "activityId": "5",
-          "revision": null,
-          "type": null
-      }];
+      vm.details = [];
       vm.date = new Date();
 
       vm.getTypeName = function(id) {
-        // TODO - FIX THIS!!!
-        return "Raju";
+        return typesFactory.getType(id).name;
       };
 
       vm.update = function(d) {
-        // TODO - FIX THIS!!!
-        // HINT
-        // Given a date 'd' you can find the start of the month like so
-        // moment(d).startOf('month').unix();
-        // and end of month like so moment(d).endOf('month').unix();
-        //
-        // Another HINT
-        // Look into typesFactory.getTypeDetails()
-        // REMEMBER!! typesFactory.getTypeDetails() returns a PROMISE object
-        //
-        // Last hint
-        // You will need to extract the ID from the URL
-        // Look at the documentation for $routeSegment
-        // http://angular-route-segment.com/
+        var id = $routeSegment.$routeParams.id;
+        var start = moment(d).startOf('month').unix();
+        var end = moment(d).endOf('month').unix();
+        typesFactory.getTypeDetails(id, start, end).then(function(data) {
+          vm.details = data;
+        });
       };
     }
 ]);
